@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
+    // Kita kekalkan ini buat masa ni untuk lepaskan build
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // Kunci 'eslint' sudah dibuang kerana tidak lagi disokong di v16
 };
 
 export default nextConfig;
